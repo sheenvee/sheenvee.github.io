@@ -16,8 +16,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <title>Sheen World - Order</title>
-    <meta property="fb:app_id" content="844349322360875" />
-    <meta property="og:url" content="http://kaneskii.github.io/sheen2/order/" />
+    <meta property="fb:app_id" content="1589275718066664" />
+    <meta property="og:url" content="http://sheenvee.github.io/order/" />
     <meta property="og:title" content="Sheen World - Order" />
     <meta property="og:description" content="Sheen World - Order" />
   </head>
@@ -99,7 +99,7 @@
       <div class="comments">
         <p>Leave us a comment</p>
         <p class="text-muted comments-note">Login with your Facebook account and leave us a comment.</p>
-        <div class="fb-comments" data-href="http://kaneskii.github.io/sheen2/order/" data-width="100%" data-numposts="6" data-mobile></div>
+        <div class="fb-comments" data-href="http://sheenvee.github.io/order/" data-width="100%" data-numposts="6" data-mobile></div>
       </div>
     </div>
 
@@ -110,14 +110,22 @@
     </footer>
 
     <div id="fb-root"></div> <!-- FACEBOOK PLUGIN -->
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=844349322360875";
-      fjs.parentNode.insertBefore(js, fjs);
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1589275718066664',
+          xfbml      : true,
+          version    : 'v2.6'
+        });
+      };
+
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-
   </body>
 </html>
